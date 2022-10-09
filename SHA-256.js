@@ -1,5 +1,5 @@
-function sha(stringa) {
-    var f = stringa;
+function sha(string) {
+    var f = string;
     if (f.length < 9223372036854776000) {//numero massimo rappresentabile con potenza di 64 per i bit
         var f2 = "";
         for (var i = 0; i < f.length; i++) { //converto ogni carattere in decimale ponendo dei divisori in ogni letter
@@ -219,12 +219,12 @@ function rightRotate(s, s0) {
             else { arr[j] = arr[j - 1]; }
         }
     }
-    var sRet = "";
+    var digestFinal = "";
     for (var i = 0; i < arr.length; i++) {
-        sRet = sRet.concat(arr[i]);
+        digestFinal = digestFinal.concat(arr[i]);
     }
 
-    return sRet;
+    return digestFinal;
 }
 
 function isLtEn() {/* questa parte serve per verificare il tipo di struttura hardware, se è big o little endian */
