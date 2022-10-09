@@ -224,7 +224,7 @@ function rightRotate(s, s0) {
         digestFinal = digestFinal.concat(arr[i]);
     }
 
-    return digestFinal;
+    return digestFinal;//final output
 }
 
 function isLtEn() {/* questa parte serve per verificare il tipo di struttura hardware, se è big o little endian */
